@@ -1,0 +1,59 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="Content-Style-Type" content="text/css">
+  <title></title>
+  <meta name="Generator" content="Cocoa HTML Writer">
+  <meta name="CocoaVersion" content="1671.6">
+  <style type="text/css">
+      form{
+          
+          margin:0 auto;
+          width:600px;
+      }
+  </style>
+    <script>
+    function myfunc(){
+        
+        var name=document.forms["RegForm"]["Name"];
+        
+        var password=document.forms["RegForm"]["Password"];
+        
+        if(name.value==""){
+            
+            window.alert("please enter your name");
+            name.focus();
+            return false;
+        }
+        
+        if(password.value==""){
+            
+            window.alert("enter password");
+            password.focus();
+            return false;
+        }
+        
+        return true;
+    }
+    </script>
+</head>
+<body>
+    <h1 style="text-align:center"> Registration form </h1>
+    <form name="RegForm" method="get" onclick="return myfunc()">
+        
+        <p> Name: <input type="text" size="65" name="Name"/></p>
+        <br/>
+        
+        <p> Password: <input type="text" size="65" name="Password"/></p>
+        <br/>
+        
+        <input type="submit" value="send" name="Submit"/>
+        
+   
+    
+        
+    
+    </form>
+</body>
+</html>
