@@ -7,6 +7,12 @@
   <meta name="Generator" content="Cocoa HTML Writer">
   <meta name="CocoaVersion" content="1671.6">
   <style type="text/css">
+  .center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 25%;
+}
       body{background-color:cornflowerblue}
       
       ul>li{
@@ -46,8 +52,17 @@
         } 
       
   </style>
+  <script>
+function goBack(){
+
+    window.history.back();
+}
+
+  </script>
 </head>
 <body>
+    <input type="button" onclick="goBack()" value = "goooo back!">
+    <MARQUEE direction="up">
     <div class="container">
     <div class="row">
     <div class="column">
@@ -75,6 +90,8 @@
             <li> Lil Wayne </li>
             </ul>
             </div></div>
+
+            <img src="Nirvana.jpg" alt="Nirvana" class="center">
         
         <div class="column">
         <div class="content">
@@ -93,6 +110,6 @@
                 <ul><li> mostly stuff from the 2000s until 2015 or so </li></ul></div></div>
     </div>
     </div>
-    
+    </MARQUEE>
 </body>
 </html>
